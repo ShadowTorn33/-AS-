@@ -26,7 +26,7 @@ function HomepageCarousel() {
         />
         <Carousel.Caption>
           <h3>All Sports</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>Welcome to All Sports!! Where you can learn more about all the different sports and activities around the world.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -38,7 +38,7 @@ function HomepageCarousel() {
 
         <Carousel.Caption>
           <h3>All Sports</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Welcome to All Sports!! Where you can learn more about all the different sports and activities around the world.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -51,7 +51,7 @@ function HomepageCarousel() {
         <Carousel.Caption>
           <h3>All Sports</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Welcome to All Sports!! Where you can learn more about all the different sports and activities around the world.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
