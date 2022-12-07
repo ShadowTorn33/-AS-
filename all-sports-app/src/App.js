@@ -8,6 +8,11 @@ import SportslistPage from "./Pages/SportslistPage";
 import WorldRecords from "./Pages/WorldRecords";
 import Locations from "./Pages/Locations";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Tags from "./Components/Tags/Tags";
+import Title from "./Components/Title";
+import { faFacebook,  faInstagram, faGithub, faTwitter, faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome'
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,6 +20,7 @@ function App() {
       <header className="Container">
         <h1 className="Title">- AS -</h1>
       </header>
+      <Title />
       <NavBar />
       {/* <Homepage /> */}
       <Routes>
@@ -23,6 +29,8 @@ function App() {
         <Route path="/worldrecords" element={<WorldRecords />} />
         <Route path="/locations" element={<Locations />} />
       </Routes>
+
+        <Footer />
     </>
   );
 }
