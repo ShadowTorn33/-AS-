@@ -32,7 +32,7 @@ function App() {
       {/* <Homepage /> */}
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/sportslist" element={<SportslistPage />} />
+        <Route path="/sportslist/:id" element={<SportslistPage />} />
         <Route path="/worldrecords" element={<WorldRecords />} />
         <Route path="/locations" element={<Locations />} />
       </Routes>

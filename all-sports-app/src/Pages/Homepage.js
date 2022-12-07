@@ -7,7 +7,7 @@ import Card from "react-bootstrap/Card";
 import HomepageCarousel from "../Components/Carousel";
 
 const Homepage = () => {
-  const [card, setCards] = useState([]);
+  const [cards, setCards] = useState([]);
 
   const { id } = useParams();
 
@@ -26,16 +26,16 @@ const Homepage = () => {
   useEffect(() => {
     fecthCards();
   }, []);
-
+  
   return (
     <>
       <HomepageCarousel />
       <Container fluid>
-        {card.map((card,index) => {
-          const id = card.relationships.tags.data.includes("bike");
+        {cards.map((card,index) => {
+        //   const id = card.attributes.id;
           return (
             <Card border="info" style={{ width: "18rem" }} key={index}>
-              <Link to={`/sportslist/`}>
+              <Link to={`/sportslist/${card.id}`}>
                 <Card.Img
                   variant="top"
                   src={card.relationships.images.data[0].url}
