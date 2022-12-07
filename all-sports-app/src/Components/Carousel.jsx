@@ -8,7 +8,7 @@ function HomepageCarousel() {
     fetch(url)
       .then((res) => res.json())
       .then((res) => {
-        console.log("Images Res", res.data);
+        // console.log("Images Res", res.data);
         setImages(res.data);
       });
   };

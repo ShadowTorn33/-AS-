@@ -16,12 +16,12 @@ const Homepage = () => {
       .then((res) => res.json())
       .then((res) => {
         setCards(res.data);
-        console.log(res.data);
+        // console.log('homepage', res.data);
       })
       .catch(console.error);
   };
 
-  console.log(card);
+//   console.log(card);
 
   useEffect(() => {
     fecthCards();
@@ -31,10 +31,10 @@ const Homepage = () => {
     <>
       <HomepageCarousel />
       <Container fluid>
-        {card.map((card) => {
+        {card.map((card,index) => {
           const id = card.relationships.tags.data.includes("bike");
           return (
-            <Card border="info" style={{ width: "18rem" }}>
+            <Card border="info" style={{ width: "18rem" }} key={index}>
               <Link to={`/sportslist/`}>
                 <Card.Img
                   variant="top"
