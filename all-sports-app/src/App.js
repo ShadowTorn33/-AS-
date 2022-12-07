@@ -24,9 +24,9 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-      <header className="Container">
+      {/* <header className="Container">
         <h1 className="Title">- AS -</h1>
-      </header>
+      </header> */}
       {/* <Title /> */}
       <NavBar />
       {/* <Homepage /> */}
