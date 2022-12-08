@@ -1,11 +1,12 @@
 import Carousel from "react-bootstrap/Carousel";
 import { useState, useEffect } from "react";
+import Loading from "./Loading";
 
 function HomepageCarousel() {
   const url = "https://sports.api.decathlon.com/sports/?parents_only=true";
-  
+
   const [images, setImages] = useState(null);
-  
+
   const fetchImages = () => {
     fetch(url)
       .then((res) => res.json())
@@ -14,7 +15,7 @@ function HomepageCarousel() {
         setImages(res.data);
       });
   };
-  
+
   useEffect(() => {
     fetchImages();
   }, []);
@@ -29,7 +30,10 @@ function HomepageCarousel() {
         />
         <Carousel.Caption>
           <h3>All Sports</h3>
-          <p>Welcome to All Sports!! Where you can learn more about all the different sports and activities around the world.</p>
+          <p>
+            Welcome to All Sports!! Where you can learn more about all the
+            different sports and activities around the world.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -41,7 +45,10 @@ function HomepageCarousel() {
 
         <Carousel.Caption>
           <h3>All Sports</h3>
-          <p>Welcome to All Sports!! Where you can learn more about all the different sports and activities around the world.</p>
+          <p>
+            Welcome to All Sports!! Where you can learn more about all the
+            different sports and activities around the world.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -54,13 +61,14 @@ function HomepageCarousel() {
         <Carousel.Caption>
           <h3>All Sports</h3>
           <p>
-            Welcome to All Sports!! Where you can learn more about all the different sports and activities around the world.
+            Welcome to All Sports!! Where you can learn more about all the
+            different sports and activities around the world.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   ) : (
-    <p>Loading...</p>
+    <Loading />
   );
 }
 
