@@ -30,7 +30,7 @@ const Homepage = () => {
       <Container fluid>
         {cards.map((card, index) => {
           return (
-            <Card border="info" style={{ width: "18rem" }} key={index}>
+            <Card className="body" border="light" style={{ width: "18rem" }} key={index}>
               <Link to={`/sportslist/${card.id}`}>
                 <Card.Img
                   variant="top"

@@ -8,6 +8,7 @@ import WorldRecords from "./Pages/WorldRecords";
 import Locations from "./Pages/Locations";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./Components/Footer";
+import Aboutme from "./Components/About Me/Aboutme";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/aboutme" element={<Aboutme />} />
         <Route path="/sportslist/:id" element={<SportslistPage />} />
         <Route path="/worldrecords" element={<WorldRecords />} />
         <Route path="/locations" element={<Locations />} />

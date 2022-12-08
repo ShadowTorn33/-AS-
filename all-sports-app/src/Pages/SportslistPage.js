@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 // import NavBar from "../Components/NavBar/NavBar";
 import Footer from "../Components/Footer";
 
+
 const SportslistPage = () => {
   const [details, setDetails] = useState(null);
 
@@ -30,7 +31,7 @@ const SportslistPage = () => {
       <img src={details.relationships.images.data[0].url} style={{width: '30rem'}} />
       <h2>{details.attributes.name}</h2>
       <p>{details.attributes.description}</p>
-      <div>Related sports image (bootstrap)</div>
+      <img src={details.attributes.icon} className='App-logoo'/>
     </div>
   ) : (<p>Loading. . .</p>);
 };
