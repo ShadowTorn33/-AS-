@@ -7,10 +7,11 @@
     display: flex;
     flex-wrap: wrap;
     background-image: linear-gradient(green,rgb(35, 35, 198),rgb(206, 36, 36),rgba(223, 223, 23, 0.84));
+
 }
 
 .body {
-    margin: 10px;
+  margin: 10px;
 }
 
 .icons {
