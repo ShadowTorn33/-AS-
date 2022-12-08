@@ -23,12 +23,11 @@ const SportslistPage = () => {
     fetchDetails();
   }, []);
 
- 
+  
   return details ? (
     <div className="container">
-      {/* <Navbar /> */}
       <h1 className="sportslist">Sports Details!</h1>
-      <div>Carousel Location</div> 
+      <img src={details.relationships.images.data[0].url} style={{width: '30rem'}} />
       <h2>{details.attributes.name}</h2>
       <p>{details.attributes.description}</p>
       <div>Related sports image (bootstrap)</div>

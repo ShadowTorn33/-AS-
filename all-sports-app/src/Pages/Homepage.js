@@ -1,38 +1,34 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-// import Tags from "../Components/Tags/Tags";
 import HomepageCarousel from "../Components/Carousel";
 
 const Homepage = () => {
   const [cards, setCards] = useState([]);
-
-  const { id } = useParams();
 
   const fecthCards = () => {
     fetch("https://sports.api.decathlon.com/sports/?parents_only=true")
       .then((res) => res.json())
       .then((res) => {
         setCards(res.data);
-        // console.log('homepage', res.data);
+        console.log("homepage", res.data);
       })
       .catch(console.error);
   };
 
-//   console.log(card);
+  //   console.log(card);
 
   useEffect(() => {
     fecthCards();
   }, []);
-  
+
   return (
     <>
       <HomepageCarousel />
       <Container fluid>
-        {cards.map((card,index) => {
-        //   const id = card.attributes.id;
+        {cards.map((card, index) => {
           return (
             <Card border="info" style={{ width: "18rem" }} key={index}>
               <Link to={`/sportslist/${card.id}`}>

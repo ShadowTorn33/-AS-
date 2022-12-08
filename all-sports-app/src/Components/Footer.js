@@ -2,7 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { faFacebook,  faInstagram, faGithub, faTwitter, faDiscord, faLinkedin, faYoutube, faTiktok, faDocker, faCloudflare, faSlack, faGoogle, faGitlab, faWindows } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome'
-// import { faI } from '@fortawesome/free-solid-svg-icons'
+
 
 const Footer = () => {
   return (

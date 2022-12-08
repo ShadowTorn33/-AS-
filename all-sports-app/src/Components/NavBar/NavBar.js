@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -30,23 +29,6 @@ const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    // <div className="">
-    //   <h3>NavBar</h3>
-    //   <ul>
-    //     <Link to={"/"}>
-    //       <li>Homepage</li>
-    //     </Link>
-    //     <Link to="/sportslist">
-    //       <li>Sports List</li>
-    //     </Link>
-    //     <Link to="/worldrecords">
-    //       <li>World Records</li>
-    //     </Link>
-    //     <Link to="/locations">
-    //       <li>Locations</li>
-    //     </Link>
-    //   </ul>
-    // </div>
   );
 };
 

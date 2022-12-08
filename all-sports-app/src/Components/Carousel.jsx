@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 
 function HomepageCarousel() {
   const url = "https://sports.api.decathlon.com/sports/?parents_only=true";
+  
   const [images, setImages] = useState(null);
+  
   const fetchImages = () => {
     fetch(url)
       .then((res) => res.json())
@@ -12,6 +14,7 @@ function HomepageCarousel() {
         setImages(res.data);
       });
   };
+  
   useEffect(() => {
     fetchImages();
   }, []);
