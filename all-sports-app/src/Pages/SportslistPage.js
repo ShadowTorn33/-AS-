@@ -31,6 +31,7 @@ const SportslistPage = () => {
       <h2>{details.attributes.name}</h2>
       <p>{details.attributes.description}</p>
       <img src={details.attributes.icon} className='App-logoo'/>
+      <p>{details.relationships.related[2].data.id}</p>
     </div>
   ) : (
     <p>Loading. . .</p>
