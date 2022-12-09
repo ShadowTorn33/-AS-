@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Card from "react-bootstrap/Card";
+import Accordion from 'react-bootstrap/Accordion';
 import Container from "react-bootstrap/Container";
 import CardLoading from "../CardLoading";
 
@@ -21,36 +21,22 @@ const Moreinfo = () => {
 
   return (
     <>
-      <Container fluid>
+          <Accordion defaultActiveKey="0" fluid>
         {sports !== [] ? (
-          sports.map((sport, index) => {
-            return (
-              <Card
-                className="body"
-                border="light"
-                style={{ width: "18rem" }}
-                key={index}
-              >
-                <Card.Img
-                  variant="top"
-                  src={sport.strSportThumb}
-                  style={{
-                    width: "100%",
-                    height: "12rem",
-                    objectfit: "fill",
-                  }}
-                />
-                <Card.Body>
-                  <Card.Title>{sport.strSport}</Card.Title>
-                  <Card.Text>{sport.strSportDescription}</Card.Text>
-                </Card.Body>
-              </Card>
+            sports.map((sport, index) => {
+                return (
+                    <Accordion.Item eventKey={index}>
+                     <Accordion.Header>{sport.strSport}</Accordion.Header>
+                     <Accordion.Body>
+                       {sport.strSportDescription}
+                     </Accordion.Body>
+                   </Accordion.Item>
             );
-          })
+        })
         ) : (
-          <CardLoading />
-        )}
-      </Container>
+            <CardLoading />
+            )}
+            </Accordion>
     </>
   );
 };
