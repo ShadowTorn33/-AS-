@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import RelatedSportCards from "../Components/RelatedSportCards";
 
 
 const SportslistPage = () => {
@@ -12,7 +13,7 @@ const SportslistPage = () => {
     fetch(`https://sports.api.decathlon.com/sports/${id}`)
       .then((res) => res.json())
       .then((res) => {
-        console.log("res", res.data);
+        // console.log("res", res.data);
         setDetails(res.data);
       });
   };
@@ -30,8 +31,8 @@ const SportslistPage = () => {
       />
       <h2>{details.attributes.name}</h2>
       <p>{details.attributes.description}</p>
-      <img src={details.attributes.icon} className='App-logoo'/>
-      <p>{details.relationships.related[2].data.id}</p>
+      <div>Related sports image (bootstrap)</div>
+      <RelatedSportCards singleSportId={details.id} />
     </div>
   ) : (
     <p>Loading. . .</p>
