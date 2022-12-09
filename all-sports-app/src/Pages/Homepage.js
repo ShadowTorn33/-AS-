@@ -14,12 +14,9 @@ const Homepage = () => {
       .then((res) => res.json())
       .then((res) => {
         setCards(res.data);
-        console.log("homepage", res.data);
       })
       .catch(console.error);
   };
-
-  //   console.log(card);
 
   useEffect(() => {
     fecthCards();
