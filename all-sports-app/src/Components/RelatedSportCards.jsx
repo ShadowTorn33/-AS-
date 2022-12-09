@@ -8,7 +8,6 @@ const RelatedSportCards = (props) => {
     fetch(`https://sports.api.decathlon.com/sports/${props.singleSportId}`)
       .then((response) => response.json())
       .then((response) => {
-        // console.log("Single Sport Res", response.data);
         relatedSportIDs(response.data);
       });
   };
@@ -21,7 +20,6 @@ const RelatedSportCards = (props) => {
     const idList = jsonData.relationships.related;
     for (let i = 0; i < idList.length; i++) {
       idArr.push(idList[i].data.id);
-      //   console.log("List of IDs", idArr);
     }
     getRelatedSportsData(idArr);
     return idArr;
@@ -30,16 +28,11 @@ const RelatedSportCards = (props) => {
   async function getRelatedSportsData(listOfIDs) {
     let finalArr = [];
     for (let i = 0; i < listOfIDs.length; i++) {
-      //   console.log(
-      //     "URLs to Fetch",
-      //     `https://sports.api.decathlon.com/sports/${listOfIDs[i]}`
-      //   );
       const response = await fetch(
         `https://sports.api.decathlon.com/sports/${listOfIDs[i]}`
       );
       const relatedSport = await response.json();
       finalArr.push(relatedSport.data);
-      //   console.log(finalArr);
     }
     return setIdArr(finalArr);
   }
@@ -47,7 +40,6 @@ const RelatedSportCards = (props) => {
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       {idArr ? (
         idArr.map((id, idx) => {
-          //   console.log(id.relationships.images.data[0]);
           return (
             <div key={idx}>
               <Card style={{ width: "18rem" }}>

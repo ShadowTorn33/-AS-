@@ -10,7 +10,6 @@ const Leagues = () => {
       .then((res) => res.json())
       .then((res) => {
         setLeageus(res.leagues);
-        console.log(res.leagues);
       });
   };
 

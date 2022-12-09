@@ -19,7 +19,6 @@ function App() {
         <Route path="/sportslist/:id" element={<SportslistPage />} />
         <Route path="/leaguespage" element={<LeaguesPage />} />
       </Routes>
-
       <Footer />
     </>
   );

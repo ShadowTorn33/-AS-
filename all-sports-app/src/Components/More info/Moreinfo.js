@@ -1,22 +1,17 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-// import CardLoading from "../Components/CardLoading";
-import { useParams } from "react-router-dom";
+import CardLoading from "../CardLoading";
 
 const Moreinfo = () => {
   const [sports, setSports] = useState([]);
-
-  const { id } = useParams();
 
   const fetchDetails = () => {
     fetch(`https://www.thesportsdb.com/api/v1/json/2/all_sports.php/`)
       .then((res) => res.json())
       .then((res) => {
         setSports(res.sports);
-        console.log(res.sports);
       });
   };
 
@@ -53,8 +48,7 @@ const Moreinfo = () => {
             );
           })
         ) : (
-          //   <CardLoading />
-          <p>Loading. . .</p>
+          <CardLoading />
         )}
       </Container>
     </>
