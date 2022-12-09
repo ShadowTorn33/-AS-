@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import RelatedSportCards from "../Components/RelatedSportCards";
 
+
 const SportslistPage = () => {
   const [details, setDetails] = useState(null);
 
