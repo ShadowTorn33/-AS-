@@ -5,22 +5,21 @@ import Table from "react-bootstrap/Table";
 const Leagues = () => {
   const [leagues, setLeageus] = useState([]);
 
-//   const fetchLeagues = () => {
-//     fetch("https://www.thesportsdb.com/api/v1/json/2/all_leagues.php")
-//       .then((res) => res.json())
-//       .then((res) => {
-//         setLeageus(res.leagues);
-//       });
-//   };
+  const fetchLeagues = () => {
+    fetch("https://www.thesportsdb.com/api/v1/json/2/all_leagues.php")
+      .then((res) => res.json())
+      .then((res) => {
+        setLeageus(res.leagues);
+      });
+  };
 
-//   useEffect(() => {
-//     fetchLeagues();
-//   }, []);
+  useEffect(() => {
+    fetchLeagues();
+  }, []);
 
   return (
     <>
-    <h1>hi</h1>
-      {/* <Table striped bordered hover>
+      <Table striped bordered hover>
         <thead>
           <tr>
             <th></th>
@@ -41,7 +40,7 @@ const Leagues = () => {
             );
           })}
         </tbody>
-      </Table> */}
+      </Table>
     </>
   );
 };
