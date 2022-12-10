@@ -1,0 +1,9 @@
+* {
+    list-style-type: none;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
