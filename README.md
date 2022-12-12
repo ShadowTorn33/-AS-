@@ -1,6 +1,25 @@
-[<img src='https://fcasdathletics.org/wp-content/uploads/2012/12/sports-banner.jpg' />]
-# **All Sports**
-- Welcome to All Sports! The site that is inspired by the curiosity of learning about new sports. Within the site, you can find detailed information about various sports around thr world. Find out if your favorite sport has any type of leagues!
+<img src='https://fcasdathletics.org/wp-content/uploads/2012/12/sports-banner.jpg' />
+
+
+# [All Sports](https://imaginative-pothos-6c914f.netlify.app/)
+
+## Overview
+
+- Welcome to All Sports! The site that is inspired by the curiosity of learning about new sports. Within the site, you can find detailed information about various sports around the world. Find out if your favorite sport has any type of leagues!
+
+## Description
+
+- This site is a pretty basic site. You can click on the various cards to learn more about that sport. Once clicked, it will take you to the sports list details page. From there you can read the small paragraph about the sport and see the related sports under it. In the Navbar menu, there is a more info page that has a larger description about the various sports. Inside the dropdown menu, you can chose the leagues tab and it will show you all the leagues that are available for the sports of your chosing. Hope you enjoy All Sports as much as we have to create it!
+
+<a href="https://imaginative-pothos-6c914f.netlify.app/"><img src="src/images/sport_details_page.png" alt="All Sports Sports Detail Page"  style="display: inline-block; margin: 0 auto; max-width: 150px"/></a>
+
+<a href="https://imaginative-pothos-6c914f.netlify.app/"><img src="src/images/more_info_page.png" alt="All Sports More Info Page"  style="display: inline-block; margin: 0 auto; max-width: 150px"/></a>
+
+<a href="https://imaginative-pothos-6c914f.netlify.app/"><img src="src/images/leagues_page.png" alt="All Sports Sports Leagues Page"  style="display: inline-block; margin: 0 auto; max-width: 150px"/></a>
+
+### Link to All Sports: 
+
+- [All Sports](https://imaginative-pothos-6c914f.netlify.app/)
 
 ## Technologies Used
 
@@ -15,7 +34,26 @@
 - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 - ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
-## Description
+### Additional Resources:
 
-- This site is a pretty basic site. You can click on the various cards to learn more about that sport. Once clicked, it will take you to the sports list details page. From there you can read the small paragraph about the sport and see the related sports under it. In the Navbar menu, there is a more info page that has a larger description about the various sports. Inside the dropdown menu, you can chose the leagues tab and it will show you all the leagues that are available for the sports of your chosing. Hope you enjoy All Sports as much as we have to create it!
+- [Decathlon Developrs - Sports API](https://developers.decathlon.com/products/sports/docs)
+- [The SportsDB - All Sports API](https://www.thesportsdb.com/api.php)
+- [The SportsDB - All Leagues API](https://www.thesportsdb.com/api.php)
 
+
+## Future Features
+
+- [ ] Search Bar Feature to Search for Specific Sports
+- [ ] Location Feature to display Popular Sport or Leagues within your area
+
+# Created by: 
+
+## Austin Cheer
+
+- [GitHub](https://github.com/ShadowTorn33)
+- [LinkedIn](https://www.linkedin.com/in/a-cheer/)
+
+## Luigi Bustos
+
+- [GitHub](https://github.com/luigibustos)
+- [LinkedIn](https://www.linkedin.com/in/luigibustos/)
