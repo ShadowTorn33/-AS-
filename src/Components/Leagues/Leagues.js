@@ -22,17 +22,17 @@ const Leagues = () => {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
+            <th>#</th>
+            <th>Sport</th>
+            <th>League</th>
+            <th>League Alternate</th>
           </tr>
         </thead>
         <tbody>
           {leagues.map((league, index) => {
             return (
               <tr key={index}>
-                <td>{league.index}</td>
+                <td>{index+1}</td>
                 <td>{league.strSport}</td>
                 <td>{league.strLeague}</td>
                 <td>{league.strLeagueAlternate}</td>
