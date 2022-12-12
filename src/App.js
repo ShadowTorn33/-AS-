@@ -1,5 +1,4 @@
 import "./App.css";
-import "./NavBar.css";
 import { Routes, Route } from "react-router";
 import NavBar from "./Components/NavBar/NavBar";
 import Homepage from "./Pages/Homepage";
